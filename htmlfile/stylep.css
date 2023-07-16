@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: NotoKufiArabic-Bold;
+    src: url(../fonts/NotoKufiArabic-Bold.ttf);
+}
+@font-face {
+    font-family: NotoKufiArabic;
+    src: url(../fonts/NotoKufiArabic-Medium.ttf);
+}
+
+
+
+.card1 {
+    width: 100% ;
+    padding: 25px 10px;
+    padding-bottom: 8px;
+    
+}
+.inner-card {
+    background: rgb(200,158,158);
+    background: linear-gradient(90deg, rgb(118, 24, 24) 0%, rgb(207, 49, 10) 35%, rgba(145,82,76,1) 100%);  
+    color: #fff;
+    /* padding: 30px 20px; */
+    -webkit-box-shadow: -1px -1px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px -1px 15px -1px rgba(0,0,0,0.75);
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.inner-card  h3{
+    font-family: NotoKufiArabic-Bold ;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+.inner-card p{
+    font-family: NotoKufiArabic ;
+    font-size: 1.1rem;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+body {
+  padding :50px 100px ;
+}
+
+.inner-card>* {
+    padding-left: 0;
+    padding-right: 0;
+  padding-bottom:30px;
+}
+.card-content {
+    max-width: 90%;
+    padding-top: 30px;
+    padding-right: 30px ;
+}
+.card-image {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+}
+.card-image img {
+    width: 250px;
+    height: 250px;
+    /* filter:  drop-shadow(0.5px 0px 3px #000000); */
+    border-radius: 3px;
+    transition: all 0.9s ease;
+
+
+}
+.inner-card:hover  .card-image img {
+transform: scale(1.1);
+}
+@media  screen and (max-width: 766px) {
+    .card-image {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+    
+    }
+    .inner-card {
+        flex-direction: column-reverse;
+    }
+}
+.card-btn button {
+    padding: 10px 24px;
+    color: #fff;
+    background-color: unset;
+    border: 2px solid #fff;
+    font-family: NotoKufiArabic ;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+
+}
+.card-btn button:hover {
+    padding: 10px 24px;
+    color: #FFF;
+    background-color: rgba(225, 129, 129, 0.493);
+    border: 2px solid #fff;
+    font-family: NotoKufiArabic ;
+    border-radius: 2px;
+    curser :pointer;
+
+}
+
